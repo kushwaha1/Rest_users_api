@@ -49,7 +49,7 @@ project-folder/
 
 ```
 
-###
+### Testing
 ```bash
 API Endpoints - Use Postman or ThunderClient to test all endpoints:
 
@@ -61,10 +61,18 @@ API Endpoints - Use Postman or ThunderClient to test all endpoints:
 
 ```
 
-###
+### Important updates
 ```bash
 1. Added api screenshot document file in `doc` folder.
 2. Added Postman collection in `postman-collection` folder.
     - You can import file in your postman and access the all apis.
 
+```
+
+### Notes
+```bash
+1. Users are stored in-memory; data will reset when server restarts.
+2. Numeric IDs are auto-incremented.
+3. PUT requests allow partial updates; only provided fields are changed.
+4. Validation errors return 400 with detailed messages.
 ```
